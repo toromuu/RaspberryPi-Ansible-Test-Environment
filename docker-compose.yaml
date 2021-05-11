@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+
+    raspberry1:
+        build:
+            context: ./raspberry
+        container_name: raspberry1
+        networks:
+            - mynetwork
+        volumes:
+            - ./volume/raspberry1:/sdcard
+        ports:
+            - "2201:2222"
+
+    raspberry2:
+        build:
+            context: ./raspberry
+        container_name: raspberry2
+        networks:
+            - mynetwork
+        volumes:
+            - ./volume/raspberry2:/sdcard
+        ports:
+            - "2202:2222"
+
+    raspberry3:
+        build:
+            context: ./raspberry
+        container_name: raspberry3
+        networks:
+            - mynetwork
+        volumes:
+            - ./volume/raspberry3:/sdcard
+        ports:
+            - "2203:2222"
+            
+networks:
+  mynetwork:
+      driver: bridge
