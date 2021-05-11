@@ -72,7 +72,7 @@ Full Version comes with a default Graphical User Interface so even if optimized 
 something like this
 
 <div align="center">
-	<img width="821" src="readme/Folders.png">
+	<img width="821" src="readme/Folders.PNG">
 </div>
 
 3. The third step is to open the folder "Raspberry-Ansible-Test-Environment-9.8-Stretch-Lite", and
@@ -82,7 +82,7 @@ open the file “run.sh” with an editor such as Visual Studio.
 highlighted in the following figure , by the path of our inventory, (location of the hosts file).
 
 <div align="center">
-	<img width="821" src="readme/Inventory.png">
+	<img width="821" src="readme/Inventory.PNG">
 </div>
 
 
@@ -91,7 +91,7 @@ by the path of the folder that contains the playbook. You also have to change th
 playbook, underlined in red in the following figure.
 
 <div align="center">
-	<img width="821" src="readme/Playbook.png">
+	<img width="821" src="readme/Playbook.PNG">
 </div>
 
 6. Then run the sh script, running the following command
@@ -104,7 +104,7 @@ When the terminal asks for the ssh password, enter "raspberry" as the password.
 In the same way, enter the Vault key. If you don't have a Vault key, remove the following option in run.sh
 
 <div align="center">
-	<img width="821" src="readme/Vault.png">
+	<img width="821" src="readme/Vault.PNG">
 </div>
 
 
@@ -118,13 +118,15 @@ automatically.
 ssh -2222 pi@localhost
 
 <div align="center">
-	<img width="821" src="readme/PiConsole.png">
+	<img width="821" src="readme/PiConsole.PNG">
 </div>
 
 11. Now you can check the playbook changes manually
 
 
-+ You can use another Ansible image, changing it in the run script
++ Additionally
+
+You can use another Ansible image, changing it in the run script
 
 <div align="center">
 	<img width="821" src="readme/ansibleImage.png">
@@ -133,7 +135,8 @@ ssh -2222 pi@localhost
 I recommend the following repositories
 
 [@William-Yeh](https://github.com/William-Yeh/docker-ansible)
-[cytopia](https://github.com/cytopia/docker-ansible)
+
+[@cytopia](https://github.com/cytopia/docker-ansible)
 
 ## INSTALL FOR THE 9.8-Stretch-Full BRANCH
 
