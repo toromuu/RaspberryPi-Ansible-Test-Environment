@@ -1,0 +1,8 @@
+[all:vars]
+ansible_user=pi
+ansible_ssh_pass=raspberry
+
+[raspberry-cluster]
+raspberry1:2222
+raspberry2:2222
+raspberry3:2222

@@ -1,0 +1,5 @@
+---
+  - name: PingRaspberry
+    hosts: raspberry-cluster
+    tasks:
+      - action: ping

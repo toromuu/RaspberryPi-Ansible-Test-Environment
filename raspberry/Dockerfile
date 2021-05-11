@@ -2,8 +2,8 @@ FROM debian:stretch
 
 ENV RPI_QEMU_KERNEL kernel-qemu-4.14.79-stretch
 ENV RPI_QEMU_KERNEL_COMMIT 061a3853cf2e2390046d163d90181bde1c4cd78f
-ENV RASPBIAN_IMAGE 2019-04-08-raspbian-stretch-lite
-ENV RASPBIAN_IMAGE_URL https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/
+ENV RASPBIAN_IMAGE 2019-04-08-raspbian-stretch-full
+ENV RASPBIAN_IMAGE_URL https://downloads.raspberrypi.org/raspbian_full/images/raspbian_full-2019-04-09/
 
 
 WORKDIR /root
