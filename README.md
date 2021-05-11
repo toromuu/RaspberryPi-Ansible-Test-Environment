@@ -24,12 +24,12 @@ The project has the following architecture, where we have a container with every
 
 Lite Version is a minimal operating system. It only has Command Line Interface so requires a very low amount of RAM and CPU usage.
 
-* `master` The master branch, includes an Ansible container + 3 Raspbian 9.8-Stretch-lite containers
+* `master` The master branch, includes an Ansible Alpine container + 3 Raspbian 9.8-Stretch-lite containers
 
 
-Full Version comes with a default Graphical User Interface so even if optimized it requires anyway addicting packages and software, RAM and CPU usage will result increased if compared to Lite version
+Full Version comes with a default Graphical User Interface so even if optimized it requires anyway addicting packages and software, RAM and CPU usage will result increased if compared to Lite version.
 
-* `9.8-Stretch-Full` Includes an Ansible container + 3 Raspbian 9.8-Stretch containers
+* `9.8-Stretch-Full` Includes an Ansible-Jenkins container  + 3 Raspbian 9.8-Stretch containers
 
 
 
@@ -124,6 +124,17 @@ ssh -2222 pi@localhost
 11. Now you can check the playbook changes manually
 
 
++ You can use another Ansible image, changing it in the run script
+
+<div align="center">
+	<img width="821" src="readme/ansibleImage.png">
+</div>
+
+I recommend the following repositories
+
+[@William-Yeh](https://github.com/William-Yeh/docker-ansible)
+[cytopia](https://github.com/cytopia/docker-ansible)
+
 ## INSTALL FOR THE 9.8-Stretch-Full BRANCH
 
 
@@ -216,4 +227,8 @@ Thanks to
 [@dastergon](https://github.com/dastergon) for [ansible-rpi-cluster](https://github.com/dastergon/ansible-rpi-cluster) repo.
 
 [@mrhavens](https://github.com/mrhavens) for [pidoc](https://github.com/mrhavens/pidoc) repo.
+
+[@William-Yeh](https://github.com/William-Yeh/docker-ansible) for Ansible Docker Image
+
+[@cytopia](https://github.com/cytopia/docker-ansible) for Ansible Docker Image
 
